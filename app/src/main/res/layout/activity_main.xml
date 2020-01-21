@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/background_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-17dp"
+        android:layout_marginTop="-82dp"
+        android:layout_marginEnd="-4dp"
+        app:srcCompat="@drawable/kmr_map1" />
+
+    <ImageView
+        android:id="@+id/kmr1"
+        android:layout_width="80dp"
+        android:layout_height="114dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="142dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/kmr" />
+
+    <ImageView
+        android:id="@+id/kmr2"
+        android:layout_width="80dp"
+        android:layout_height="114dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="450dp"
+        android:layout_marginTop="140dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/kmr" />
+
+    <ImageView
+        android:id="@+id/kmr3"
+        android:layout_width="80dp"
+        android:layout_height="114dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="560dp"
+        android:layout_marginTop="106dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/kmr" />
+
+    <ImageView
+        android:id="@+id/kmr4"
+        android:layout_width="80dp"
+        android:layout_height="114dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="552dp"
+        android:layout_marginTop="340dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/kmr" />
+
+    <ImageView
+        android:id="@+id/kmr5"
+        android:layout_width="80dp"
+        android:layout_height="114dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="552dp"
+        android:layout_marginTop="536dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/kmr" />
+
+    <ImageView
+        android:id="@+id/kmr6"
+        android:layout_width="80dp"
+        android:layout_height="114dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="552dp"
+        android:layout_marginTop="760dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/kmr" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="154dp"
+        android:layout_height="76dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="282dp"
+        android:layout_marginBottom="568dp"
+        android:text="It is at node 3" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="154dp"
+        android:layout_height="76dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="282dp"
+        android:layout_marginBottom="478dp"
+        android:text="It is at node 4" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="154dp"
+        android:layout_height="76dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="282dp"
+        android:layout_marginBottom="388dp"
+        android:text="It is at node 5" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="154dp"
+        android:layout_height="76dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="282dp"
+        android:layout_marginBottom="298dp"
+        android:text="It is at node 6" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="154dp"
+        android:layout_height="76dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="282dp"
+        android:layout_marginBottom="658dp"
+        android:text="It is at node 2" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="154dp"
+        android:layout_height="76dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="282dp"
+        android:layout_marginBottom="750dp"
+        android:text="It is at node 1" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="205dp"
+        android:layout_marginBottom="1158dp"
+        app:srcCompat="@drawable/kr3v" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="427dp"
+        android:layout_marginBottom="1156dp"
+        app:srcCompat="@drawable/kr3v" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="639dp"
+        android:layout_marginTop="134dp"
+        app:srcCompat="@drawable/kr3h" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="639dp"
+        android:layout_marginTop="336dp"
+        app:srcCompat="@drawable/kr3h" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="639dp"
+        android:layout_marginTop="534dp"
+        app:srcCompat="@drawable/kr3h" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="639dp"
+        android:layout_marginTop="759dp"
+        app:srcCompat="@drawable/kr3h" />
+
+</RelativeLayout>
