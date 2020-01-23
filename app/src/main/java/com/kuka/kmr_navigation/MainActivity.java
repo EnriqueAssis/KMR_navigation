@@ -2,16 +2,33 @@ package com.kuka.kmr_navigation;
 
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 public class MainActivity extends AppCompatActivity {
+
+    private TextView mTextViewResult;
+    private RequestQueue mQueue;
 
     private ImageButton goto1;
     private ImageButton goto2;
@@ -48,6 +65,8 @@ public class MainActivity extends AppCompatActivity {
     private boolean at_node5 = false;
     private boolean at_node6 = false;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -79,35 +98,35 @@ public class MainActivity extends AppCompatActivity {
         final Handler handler = new Handler();
         final int delay = 250; //milliseconds
 
-        handler.postDelayed(new Runnable(){
-            public void run(){
+        handler.postDelayed(new Runnable() {
+            public void run() {
 
                 // check which node is active to show the solid icon at the position.
-                if (at_node1){
+                if (at_node1) {
                     clearIcons();
                     kmr1.setVisibility(View.VISIBLE);
                     at_node1 = true;
-                }else if (at_node2){
+                } else if (at_node2) {
                     clearIcons();
                     kmr2.setVisibility(View.VISIBLE);
                     at_node2 = true;
 
-                }else if(at_node3){
+                } else if (at_node3) {
                     clearIcons();
                     kmr3.setVisibility(View.VISIBLE);
                     at_node3 = true;
 
-                }else if(at_node4){
+                } else if (at_node4) {
                     clearIcons();
                     kmr4.setVisibility(View.VISIBLE);
                     at_node4 = true;
 
-                }else if(at_node5){
+                } else if (at_node5) {
                     clearIcons();
                     kmr5.setVisibility(View.VISIBLE);
                     at_node5 = true;
 
-                }else if(at_node6){
+                } else if (at_node6) {
                     clearIcons();
                     kmr6.setVisibility(View.VISIBLE);
                     at_node6 = true;
@@ -164,7 +183,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         /* Listener checks if the KMR is at a specific node. If so, all animations
-        * are cleared, and a solid icon will be shown at the right node.*/
+         * are cleared, and a solid icon will be shown at the right node.*/
         it_is_at1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -212,7 +231,14 @@ public class MainActivity extends AppCompatActivity {
                 at_node6 = true;
             }
         });
+
+
+
+
+
     }
+
+
 
     // This method clears all animations, but the one where the KMR currently is.
     public void checkPosition(){
